@@ -1,0 +1,56 @@
+/* Large screens: Horizontal navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    background-color: #1b0f6c;
+}
+
+header h1 {
+    font-size: 1.9rem;
+    color: #fbf996;
+}
+
+/* Display navigation in a row for larger screens */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0rem;
+    visibility: visible;
+}
+
+nav ul li a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+}
+
+nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.temples-grid, section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Hide the hamburger menu on larger screens */
+#menu {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: row;
+    visibility: visible;
+}

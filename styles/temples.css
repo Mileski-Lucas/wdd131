@@ -1,0 +1,159 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Serif 4", serif;
+    background-color: #f8f9c5;
+    color: #333;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem;
+    background-color: #1b0f6c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.9rem;
+    color: #fbf996;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #fbf996;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #7083fffd;
+    /* Sunny effect */
+}
+
+/* Main section */
+main {
+    max-width: 100%;
+    text-align: center;
+}
+
+h2 {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+figure {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: 250px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Hamburger Menu */
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #1b0f6c;
+    color: #fbf996;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav ul.show {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+        background-color: #7083fffd;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+}
