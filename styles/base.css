@@ -50,6 +50,16 @@ main {
     width: 100%;
 }
 
+.hero {
+    width: 100vw; /* Ensure it covers the viewport width */
+    grid-column: 1 / -1; /* Optional if using it inside the grid but wanting it to stretch */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+  }
+
 section{
     background-color: #f7c873;
     margin: 30px;
