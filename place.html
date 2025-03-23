@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Resposive hero image with a favorite place - Lucas Mileski">
+    <meta name="author" content="Lucas Mileski">
+    <title>Wdd 131 - </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>South Brazil</h1>
+    </header>
+
+    <main>
+        <section class="background-section">
+            <picture>
+                <source srcset="images/Curitiba.webp" media="(min-width: 800px)">
+                <img src="images/Foz.webp" alt="Background image of the place">
+            </picture>
+
+            <section class="info-section">
+                <div class="info-box">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> <span>8,510,000 km²</span></p>
+                    <p><strong>Population:</strong> <span>216.4 million</span></p>
+                    <p><strong>Languages:</strong> <span>Portuguese</span></p>
+                    <p><strong>Currency:</strong> <span>Brazilian Real</span></p>
+                    <p><strong>Time Zone:</strong> <span>BRT (UTC -3)</span></p>
+                    <p><strong>Calling Code:</strong> <span>+55</span></p>
+                    <p><strong>Internet TLD:</strong> <span>.br</span></p>
+                </div>
+            </section>
+
+            <section class="weather-section">
+                <div class="weather-box">
+                    <h2>Weather <span class="sun-emoji">☀️</span></h2>
+                    <img src="images/sunny-icon.svg" alt="Weather icon" class="weather-icon">            
+                    <p><strong>Temperature:</strong> <span>17.6ºC</span></p>
+                    <p><strong>Conditions:</strong> <span>Sunny</span></p>
+                    <p><strong>Wind:</strong> <span>8 km/h</span></p>
+                    <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="year"></span> Lucas Mileski - Curitiba - Brazil</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
