@@ -1,0 +1,187 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Serif 4", serif;
+    background-color: #f8f6d6;
+    color: #1b1252;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #470555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.9rem;
+    font-family: "Source Serif 4", serif;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: "Source Serif 4", serif;
+    color: #fdfafa;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7f7f9;
+    background-color: #c292de; /* Sunny effect */
+}
+
+/* Main section */
+main {
+    max-width: 100%;
+    text-align: center;
+}
+
+h2 {
+    padding: 1rem;
+    margin-bottom: 1.0rem;
+    font-size: 1.5rem;
+    font-family: "Source Serif 4", serif;
+}
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f4e6f8;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+}
+
+figure img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-bottom: 0.5rem;
+    font-family: "Source Serif 4", serif;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Hamburger Menu */
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav ul.show {
+    display: flex;
+}
+
+/* Media queries for screens larger than 768px */
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 0.5rem;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+        background-color: #c292de;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    figure {
+        height: auto;
+    }
+
+    figure img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    /* Hide the hamburger menu on larger screens */
+    #menu {
+        display: none;
+    }
+}
