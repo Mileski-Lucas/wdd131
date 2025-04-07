@@ -1,0 +1,124 @@
+:root{
+    --primary-color:#F1FAEE;
+    --secondary-color:#457B9D;
+    --font-size: 1rem ;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header{
+    padding: 1rem;
+	border: 1px solid #457B9D;
+    border-radius: 5px;
+    background-color: #457B9D;
+    color: #000;
+
+
+}
+
+div{
+    display: flex;
+    align-items: center;
+    gap: 50px  ;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+
+}
+
+div img{
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+
+}
+
+nav {
+	background-color:#1D3557;
+	margin: 0 auto;
+	max-width: 80%;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 100%;
+    
+}
+
+nav a {
+	display: block;
+	color: #f8f8f8;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgb(69, 123, 157, 0.5);
+    color: #f8f8f8;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.05 ;
+    border: 5px solid #1D3557;
+}
+
+.hero-text {
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1D3557;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.text{
+    margin: 50px;  
+
+}
+
+.title-01{
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.subtitle{
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.general{
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer{
+    padding: 30px;
+    background-color: #1D3557;
+    color: #f8f8f8;
+    text-align: center;
+    
+}
