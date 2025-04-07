@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfeff;
+    padding: 20px;
+    line-height: 1.5;
+    color: #070977;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f8f8;
+    background-color: #2a037f;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background-color: #dfd9d9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label, textarea, input, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #131212;
+}
+
+/* Style for the "Select a Product ..." option */
+select#productName {
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+/* Style for the date input field */
+input[type="date"] {
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+/* Ensure radio buttons and checkboxes are in the same line with labels */
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+label.inline {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+/* Styling fieldsets */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #100f0f;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #2a037f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5c2cb1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #f0f0f0;
+    background-color: #2a037f;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}

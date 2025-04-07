@@ -1,0 +1,55 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfeff; /* Dark grey background */
+    padding: 20px;
+    line-height: 1.5;
+    color: #070977; /* Light text for better contrast */
+}
+
+h1 {
+    text-align: center;
+    color: #070977; /* Blue-violet for the heading */
+}
+
+p {
+    text-align: center;
+    color: #201e1e; /* Light text */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #2a037f; /* Blue-violet button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2a037f; /* Darker blue-violet on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #f0f0f0; /* Light footer text */
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
