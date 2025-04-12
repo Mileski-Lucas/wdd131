@@ -83,7 +83,7 @@
     .hero {
         width: 100%;
         min-height: 100vh; /* or a custom height */
-        background-image: url("images/Logo.webp");
+        background-image: url("/images/Logo.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
