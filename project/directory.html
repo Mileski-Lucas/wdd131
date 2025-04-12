@@ -9,14 +9,17 @@
     <title>Exploring Curitiba - Lucas Mileski</title>
     <meta name="description" content="The website will serve as a local guide for residents and visitors of Curitiba, 
     showcasing various attractions such as restaurants, parks, cultural centers, and other points of interest in different 
-    neighborhoods. A good site domain would be exploringctb.com.br">
+    neighborhoods. The directory page allows you to filter and search for your next adventure in Curitiba.">
     
     <meta name="author" content="Lucas Mileski">
 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     
   </head>
   <body>
@@ -25,14 +28,15 @@
             <img src="images/Logo_small.webp" alt="Small Logo">
             <h1>Exploring Curitiba</h1>
         </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a class="active" href="directory.html">Directory</a>
-            <a href="search.html">Search</a>
-            <a href="contact.html">Contact</a>
-        </nav>
     </header>
+    <nav>
+        <button id="menu-button">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active-page" href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="menu">
             <button id="grid">⏹️Grid</button>
@@ -41,10 +45,10 @@
         <div class="filters">
             <select id="filter-type">
                 <option disabled selected>Choose a filter</option>
-                <option value="parks">parks</option>
-                <option value="restaurants">restaurants</option>
-                <option value="museums">museums</option>
-                <option value="city_important_sites">city important sites</option>
+                <option value="parks">Parks</option>
+                <option value="restaurants">Restaurants</option>
+                <option value="museums">Museums</option>
+                <option value="city_important_sites">City Important Sites</option>
             </select>
             <select id="filter-value" style="width: 150px;"></select>
             <button id="filter-button">Apply Filter</button>

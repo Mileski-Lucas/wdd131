@@ -8,14 +8,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300..800&family=Gowun+Dodum&family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <title>Exploring Curitiba - Lucas Mileski</title>
     <meta name="description" content="The website will serve as a local guide for residents and visitors of Curitiba, 
-    showcasing various attractions such as restaurants, parks, cultural centers, and other points of interest in different 
-    neighborhoods. A good site domain would be exploringctb.com.br">
+    showcasing attractions like restaurants, parks, cultural centers, and other points of interest across different neighborhoods.
+     A good site domain would be exploringctb.com.br">
 
     <meta name="author" content="Lucas Mileski">
 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    
 
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     
   </head>
   <body>
@@ -24,21 +28,20 @@
             <img src="images/Logo_small.webp" alt="Small Logo">
             <h1>Exploring Curitiba</h1>
         </div>
-
-        <nav>
-            <a class="active" href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="search.html">Search</a>
-            <a href="contact.html">Contact</a>
-        </nav>
     </header>
+    <nav>
+        <button id="menu-button">☰</button>
+        <ul id="nav-menu">
+            <li><a class="active-page" href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="hero">
-            <img src="images/Logo.webp" alt="Logo">
             <div class="hero-text">
-                <p>Exploring Curitiba is the website that serves as a local guide for residents and visitors of Curitiba,<br> 
-                    showcasing various attractions such as restaurants, parks, cultural centers,
-                    and other points of interest in different neighborhoods.</p>
+                <p>Exploring Curitiba is a local guide for residents and visitors of Curitiba,<br> 
+                    featuring restaurants, parks, cultural centers, and other points of interest across the city's neighborhoods.</p>
                 <a class="indication" href="directory.html">Explore</a>
                 <p>Would you like to indicate a place?</p>
                 <a class="indication" href="contact.html">Share With Us</a>
@@ -49,17 +52,17 @@
         <section class="highlights">
             <figure>
                 <img src="images/places/madalosso.webp" alt="Madalosso" loading="lazy" width="350" height="auto">
-                <p>Looking for good food and a experience to be at the biggest restaurant from Latin America. Take a look in this option too.</p>
+                <p>Looking for great food and a chance to experience the largest restaurant in Latin America? Check out this option.</p>
                 <a class="indication" href="https://www.madalosso.com.br/">Website</a>
             </figure>
             <figure>
                 <img src="images/places/parque-barigui.webp" alt="Barigui" loading="lazy" width="350" height="auto">
-                <p>One of the most famous parks in the area, landscapes, green areas.</p>
+                <p>One of the city's most famous parks, known for its beautiful landscapes and wide green areas.</p>
                 <a class="indication" href="https://curitiba.pr.gov.br/conteudo/parque-barigui/174">Discover</a>
             </figure>
             <figure>
                 <img src="images/places/ferroviario.webp" alt="ferroviario" loading="lazy" width="350" height="auto">
-                <p>Learning more about history could be a good option. Get a time to visit the Museu do Ferroviario and learn more about the city history.</p>
+                <p>Interested in history? Take some time to visit the Museu Ferroviário and discover more about Curitiba’s past.</p>
                 <a class="indication" href="https://shoppingestacao.com.br/museu-ferroviario">Get Information</a>
             </figure>
         </section>

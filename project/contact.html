@@ -9,13 +9,17 @@
     <title>Exploring Curitiba - Lucas Mileski</title>
     <meta name="description" content="The website will serve as a local guide for residents and visitors of Curitiba, 
     showcasing various attractions such as restaurants, parks, cultural centers, and other points of interest in different 
-    neighborhoods. A good site domain would be exploringctb.com.br">
+    neighborhoods. Use the contact page to send questions, suggestions, or compliments.">
     
     <meta name="author" content="Lucas Mileski">
 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     
   </head>
   <body>
@@ -24,41 +28,42 @@
             <img src="images/Logo_small.webp" alt="Small Logo">
             <h1>Exploring Curitiba</h1>
         </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="search.html">Search</a>
-            <a class="active" href="contact.html">Contact</a>
-        </nav>
     </header>
+    <nav>
+        <button id="menu-button">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active-page" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         
         <form method="get" action="thankyou.html" class="wf1">
             <fieldset>
 
-                <legend>Apply Here</legend>
+                <legend>Share Your Suggestion</legend>
                 <label>First Name* <input type="text" name="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" required></label>
                 <label>E-mail* <input type="email" name="email" placeholder="someone@email.com" required></label>
                 <div class="contact-type">
                     
                     <div>
-                        <p>Contact type</p>
-                        <label><input type="radio" name="type" value="indication"> Indication</label>
-                        <label><input type="radio" name="type" value="question"> Questions</label>
-                        <label><input type="radio" name="type" value="compliment"> Compliment</label>
+                        <p>Type of Message</p>
+                        <label><input type="radio" name="type" value="indication"> Suggest a Place</label>
+                        <label><input type="radio" name="type" value="question"> Ask a Question</label>
+                        <label><input type="radio" name="type" value="compliment"> Give a Compliment</label>
                     </div>
                     
                 </div>
-                <label>Type here (400 characters max)
+                <label>Write your message here (400 characters max)
                     <textarea class="description" name="description" maxlength="400"></textarea>
                 </label>
                 <input type="hidden" id="timestamp" name="timestamp" value="">
   
             </fieldset>
 
-            <input type="submit" value="Send your Message">
+            <input type="submit" value="Send Your Message">
         </form>
 
     </main>

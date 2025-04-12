@@ -1,0 +1,437 @@
+:root{
+    --primary-color:#F1FAEE;
+    --secondary-color:#457B9D;
+    --font-size: 1rem ;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+/*header part*/
+header{
+    padding: 1rem;
+	border: 1px solid #457B9D;
+    border-radius: 5px;
+    background-color: #457B9D;
+    color: #000;
+
+
+}
+
+div{
+    display: flex;
+    align-items: center;
+    gap: 30px  ;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+
+}
+
+div img{
+    max-width: 200px;
+    min-width: 50px;
+    height: auto;
+    padding: 2rem;
+
+}
+
+/*nav part*/
+nav {
+    background-color:#1D3557;
+	margin: 0 auto;
+    list-style: none;
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #f8f8f8;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+nav a {
+    color: #f8f8f8;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: rgba(69, 123, 157, 0.5);
+    color: #f8f8f8;
+}
+
+.active-page {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+/*hero part*/
+.hero {
+    width: 100%;
+    min-height: 100vh; /* or a custom height */
+    background-image: url("images/Logo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Controls image visibility/opacity */
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1D3557;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Onest", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.indication{
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #1D3557;
+    color: #ffffff;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+/*main area*/
+h1{
+    text-align: center;
+}
+
+.highlights{
+    background-color: #A8DADC;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+figure{
+    background-color: #F1FAEE;
+    width: 1fr;
+    height: 600px;
+    border: 3px solid #1D3557;
+    border-radius: 6px;
+    padding: 12px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+figure img{
+    border: 3px solid #1D3557;
+    border-radius: 5px;
+}
+
+figure p{
+    padding: 15px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid #1B4965;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend{
+    color: #445ba9;
+    padding: 0 .5rem;
+    font-size: 30px;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: 1.5rem;
+}
+
+.contact-type{
+    margin: 30px;
+    border: 1px solid #1B4965;
+    border-radius: 6px;
+    max-width: 300px;
+    padding: .5rem 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.contact-type > div {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.contact-type > div > p{
+    color: #000;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: left;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 select
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 textarea.description {
+    display: block;
+    width: 600px;
+    height: 200px;
+    background-color: #eee;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    resize: vertical;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+input[type=range]{
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+.wf1 input[type="submit"]
+{
+    border: none;
+    background-image: linear-gradient(#445ba9, #000);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    font-size: 20px;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required{
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid{
+    border-left: solid 8px green;
+}
+
+.thanks{
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 30px; 
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+article.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    color: #000;
+}
+
+.participant {
+    border: 4px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 600px;
+    height: auto;
+    color: #1B4965;
+    justify-content: center;
+}
+
+img.part {
+    width: 300px;
+    height: 300px;
+    padding: 2px;
+    border: 2px solid #000 ;
+    margin-top: 60px;
+}
+
+article.list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.participant-list {
+    background-color: #f9f9f9;
+    color: #000;
+    height: auto;
+    border: 2px solid #1D3557;
+}
+
+h3.list-title{
+    background-color: #f9f9f9;
+    color: #000;
+    padding-left: 10px;
+}
+
+div.list-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin: 10px;
+    height: 2rem;
+}
+
+div.list-card p{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 0;
+}
+
+a.a-list{
+    background-color: #f9f9f9;
+    color: #000;
+    border: none;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.filters{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    padding-bottom: 0;
+    background-color: #1D3557;
+    color: #f8f8f8;
+    text-align: center;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo{
+    width: 50px;
+    height: auto;
+}
+
+.logo{
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;  
+    text-align: right;
+    align-items: center;
+    justify-content: right;  
+}
+
+.icon-img{
+    width: 40px;
+    height: auto;
+}
