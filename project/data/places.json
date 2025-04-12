@@ -1,0 +1,143 @@
+[
+ 
+  {
+    "name": "Parque Barigui",
+    "address": "Av. Cândido Hartmann, s/n - Bigorrilho, Curitiba - PR, 80730-000",
+    "website": "https://curitiba.pr.gov.br/conteudo/parque-barigui/174",
+    "image": "images/places/parque-barigui.webp",
+    "category": "parks"
+  },
+  {
+    "name": "Jardim Botânico de Curitiba",
+    "address": "Rua Engo. Ostoja Roguski - Jardim Botânico, Curitiba - PR, 80210-390",
+    "website": "https://curitiba.pr.gov.br/conteudo/jardim-botanico/171",
+    "image": "images/places/jardim-botanico.webp",
+    "category": "parks"
+  },
+  {
+    "name": "Parque Tanguá",
+    "address": "Rua Oswaldo Maciel, 97 - Taboão, Curitiba - PR, 82130-494",
+    "website": "https://curitiba.pr.gov.br/conteudo/parque-tangua/176",
+    "image": "images/places/parque-tangua.webp",
+    "category": "parks"
+  },
+  {
+    "name": "Bosque Alemão",
+    "address": "Rua Nicolo Paganini - Vista Alegre, Curitiba - PR, 80810-050",
+    "website": "https://curitiba.pr.gov.br/conteudo/bosque-alemao/169",
+    "image": "images/places/bosque-alemao.webp",
+    "category": "parks"
+  },
+  {
+    "name": "Parque São Lourenço",
+    "address": "Rua Mateus Leme, 4700 - São Lourenço, Curitiba - PR, 82210-000",
+    "website": "https://curitiba.pr.gov.br/conteudo/parque-sao-lourenco/175",
+    "image": "images/places/sao-lourenco.webp",
+    "category": "parks"
+  },
+  {
+    "name": "Bar do Victor",
+    "address": "Av. Manoel Ribas, 6995 - Santa Felicidade, Curitiba - PR, 82010-000",
+    "website": "https://bardovictor.com.br/",
+    "image": "images/places/praca-do-victor.webp",
+    "category": "restaurants"
+  },
+  {
+    "name": "Madalosso",
+    "address": "Av. Manoel Ribas, 5875 - Santa Felicidade, Curitiba - PR, 82010-000",
+    "website": "https://www.madalosso.com.br/",
+    "image": "images/places/madalosso.webp",
+    "category": "restaurants"
+  },
+  {
+    "name": "Terrazza 40",
+    "address": "Rua Padre Anchieta, 1287 - Bigorrilho, Curitiba - PR, 80730-000",
+    "website": "https://www.terrazzza40.com.br/",
+    "image": "images/places/terrazza.webp",
+    "category": "restaurants"
+  },
+  {
+    "name": "Restaurante do SENAC",
+    "address": "Rua André de Barros, 750 - Centro, Curitiba - PR, 80010-080",
+    "website": "https://www.pr.senac.br/restaurantes/",
+    "image": "images/places/senac.webp",
+    "category": "restaurants"
+  },
+  {
+    "name": "Coco Bambu Curitiba",
+    "address": "Shopping Crystal - R. Comendador Araújo, 731 - Batel, Curitiba - PR, 80420-000",
+    "website": "https://cocobambu.com/",
+    "image": "images/places/coco.webp",
+    "category": "restaurants"
+  },
+  {
+    "name": "Museu Oscar Niemeyer (MON)",
+    "address": "Rua Mal. Hermes, 999 - Centro Cívico, Curitiba - PR, 80530-230",
+    "website": "https://www.museuoscarniemeyer.org.br/",
+    "image": "images/places/museu-oscar.webp",
+    "category": "museums"
+  },
+  {
+    "name": "Museu Paranaense",
+    "address": "Rua Kellers, 289 - São Francisco, Curitiba - PR, 80510-100",
+    "website": "https://www.museuparanaense.pr.gov.br/",
+    "image": "images/places/museu-parana.webp",
+    "category": "museums"
+  },
+  {
+    "name": "Museu do Holocausto",
+    "address": "Rua Coronel Agostinho Macedo, 248 - Bom Retiro, Curitiba - PR, 80520-270",
+    "website": "https://www.museudoholocausto.org.br/",
+    "image": "images/places/museu-holocausto.webp",
+    "category": "museums"
+  },
+  {
+    "name": "Museu Egípcio e Rosacruz",
+    "address": "Rua Nicarágua, 2620 - Bacacheri, Curitiba - PR, 82515-260",
+    "website": "https://www.amorc.org.br/museu",
+    "image": "images/places/museu-egito.webp",
+    "category": "museums"
+  },
+  {
+    "name": "Museu Ferroviário de Curitiba",
+    "address": "Shopping Estação - Av. Sete de Setembro, 2775 - Rebouças, Curitiba - PR, 80230-010",
+    "website": "https://shoppingestacao.com.br/museu-ferroviario",
+    "image": "images/places/ferroviario.webp",
+    "category": "museums"
+  },
+  {
+    "name": "Ópera de Arame",
+    "address": "Rua João Gava, 874 - Abranches, Curitiba - PR, 82230-010",
+    "website": "https://curitiba.pr.gov.br/conteudo/opera-de-arame/205",
+    "image": "images/places/opera-arame.webp",
+    "category": "city_important_sites"
+  },
+  {
+    "name": "Centro Histórico de Curitiba",
+    "address": "Largo da Ordem - São Francisco, Curitiba - PR, 80510-180",
+    "website": "https://turismo.curitiba.pr.gov.br/local/centro-historico/27",
+    "image": "images/places/largo.webp",
+    "category": "city_important_sites"
+  },
+  {
+    "name": "Paço da Liberdade",
+    "address": "Praça Generoso Marques, 189 - Centro, Curitiba - PR, 80020-030",
+    "website": "https://www.sescpr.com.br/unidades/paco-da-liberdade/",
+    "image": "images/places/paco-liberdade.webp",
+    "category": "city_important_sites"
+  },
+  {
+    "name": "Memorial Ucraniano",
+    "address": "Parque Tingui - Rua Dr. Mba de Ferrante, s/n - São João, Curitiba - PR, 82110-430",
+    "website": "https://curitiba.pr.gov.br/conteudo/memorial-ucraniano/209",
+    "image": "images/places/memorial-ucraniano.webp",
+    "category": "city_important_sites"
+  },
+  {
+    "name": "Relógio das Flores",
+    "address": "Rua Barão do Serro Azul - Centro, Curitiba - PR, 80020-180",
+    "website": "https://turismo.curitiba.pr.gov.br/local/relogio-das-flores/43",
+    "image": "images/places/relogio-flores.webp",
+    "category": "city_important_sites"
+  }
+]
