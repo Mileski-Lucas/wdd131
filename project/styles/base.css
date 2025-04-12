@@ -102,24 +102,19 @@ nav a:hover {
 
 /*hero part*/
 .hero {
-    width: 100%;
-    min-height: 100vh; /* or a custom height */
-    background-image: url("/project/images/Logo.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.hero::before {
-    content: "";
+.hero-bg {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(255, 255, 255, 0.95); /* Controls image visibility/opacity */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.2;
     z-index: 0;
 }
 
@@ -151,7 +146,7 @@ nav a:hover {
     font-style: normal;
     font-size: 2rem;
     text-decoration: none;
-
+    z-index: 2;
 }
 
 /*main area*/

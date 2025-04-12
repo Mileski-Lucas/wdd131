@@ -81,26 +81,21 @@
     }
     
     .hero {
-        width: 100%;
-        min-height: 100vh; /* or a custom height */
-        background-image: url("/images/Logo.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
-    
-    .hero::before {
-        content: "";
+
+    .hero-bg {
         position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.2;
         z-index: 0;
-    }
+      }
     
     .hero-text {
         position: relative;
@@ -111,7 +106,7 @@
         justify-content: center;
         color: #1D3557;
         text-align: center;
-        padding: 20px;
+        padding: 40px;
         border-radius: 10px;
         font-family: "Onest", sans-serif;
         font-weight: 200;
@@ -130,6 +125,7 @@
         font-style: normal;
         font-size: 2rem;
         text-decoration: none;
+        z-index: 2;
     
     }
     
